@@ -1,0 +1,122 @@
+/* 內頁 上標題 圖片 ====================== */
+.inner_page{
+    background: url(../img/main/title_back/Photoer_price.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 價格方案 ============================================ */
+.price_plan_wrap{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.price_plan_wrap .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.price_plan_wrap .row .col{
+    padding: 0 20px;
+}
+.price_plan_pic{
+    width: 560px;
+}
+.price_plan_pic img{
+    width: 100%;
+}
+.price_plan_title{
+    margin-bottom: 25px;
+}
+.price_plan_title span{
+    display: inline-block;
+    font-size: 60px;
+    color: #803A29;
+    font-family: 'Caveat', cursive;
+    margin-right: 10px;
+}
+.price_plan_title h3{
+    display: inline-block;
+}
+.price_plan_date{
+    color: #606060;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.price_plan_txt{
+    letter-spacing: 2px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}
+
+
+/* 加價項目 ============================================ */
+.markup_items_wrap{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.markup_items_wrap .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.markup_items_wrap .row .col{
+    padding: 0 40px;
+}
+
+/* 拍攝地點加價 ============================================ */
+.location_price_wrap{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.location_price_wrap .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-bottom: 60px; */
+}
+.location_price_wrap .row .col{
+    padding: 0 40px;
+}
+
+/* 加價商品 ============================================ */
+.commodity_wrap{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.commodity_wrap .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.commodity_date{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.commodity_wrap .col{
+    width: 280px;
+    padding: 0 30px 60px 30px;
+}
+.commodity_pic{
+    width: 280px;
+    border-radius: 5%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.commodity_pic img{
+    width: 100%;
+}
+.commodity_txt{
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}

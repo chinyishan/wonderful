@@ -1,0 +1,382 @@
+/* Banner ============================================= */
+.swiper_container{
+    background: #fff;
+    margin: 0 auto;
+    padding: 0;
+}
+.swiper{
+    background-color: #fff;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.swiper-wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.swiper-slide {
+    /* width: 80%; */
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide img {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+}
+.swiper-pagination-bullet-active{
+    --swiper-theme-color: #fff;
+}
+
+/* slogn ================================================ */
+.slogn_wrap{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.slogn{
+    /* width: 50%; */
+    background: #F1E9E6;
+    padding: 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: -20%;
+    z-index: 1;
+    text-align: center;
+}
+.slogn_eg{
+    padding-bottom: 15px;
+    font-size: 50px;
+    color: #803A29;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 2px;
+}
+.slogn_ch{
+    font-size: 20px;
+    color: #606060;
+    letter-spacing: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 200;
+}
+
+/* 拍攝服務 ============================================== */
+.serve_wrap{
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.serve_wrap .container{
+    position: relative;
+    z-index: 1;
+}
+.h2_title{
+    text-align: center;
+}
+.serve_wrap .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.serve_pic{
+    width: 600px;
+}
+.serve_pic , .serve-txt{
+    margin: 0 40px 30px;
+}
+.serve-txt h3{
+    padding-bottom: 30px;
+}
+.serve-txt p{
+    padding-bottom: 50px;
+}
+/* 攝影棚 =========================== */
+.shoot_serve{
+    margin-bottom: 40px;
+}
+.shoot_serve a{
+    width: 520px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #E68C82;
+    margin: 0 20px;
+    box-shadow: 3px 3px 0 0 #E68C82;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .3s 0s ease-in-out;
+}
+.shoot_serve a:hover{
+    box-shadow: 10px 10px 0 0 #E68C82;
+}
+.shoot_txt h3{
+    padding-bottom: 20px;
+}
+
+/* 主題風格 ============================================== */
+.style_wrap{
+    position: relative;
+    margin: 0 auto;
+    background: url(../img/background/repeat_aper_texture_800.jpg) 0 0 repeat;
+    background-attachment: fixed;
+    border-radius: 5%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.style_wrap .container .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.style_wrap .container .row .col{
+    padding: 20px 40px;
+}
+.style_pic{
+    width: 260px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .3);
+}
+.style_pic img{
+    transition: .5s 0s ease;
+}
+.style_pic img:hover{
+    transform: scale(1.2);
+}
+.style_txt{
+    vertical-align: middle;
+}
+.style_txt span{
+    display: inline-block;
+    font-size: 60px;
+    color: #803A29;
+    font-family: 'Caveat', cursive;
+    margin-right: 10px;
+}
+.style_txt h3{
+    display: inline-block;
+}
+.style_wrap a{
+    margin: auto;
+}
+.catdog_dog1{
+    position: absolute;
+    background: url(../img/index/catdog_dog1.png) left 0 no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 30%;
+    top: -10%;
+    left: 0;
+    opacity: .5;
+    z-index: 2;
+}
+.back_og_s{
+    position: absolute;
+    background: url(../img/index/back_og_s.png) left 0 no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 30%;
+    top: -0;
+    left: -10%;
+    opacity: .5;
+    z-index: 1;
+}
+
+/* 攝影師 ============================================== */
+.photoer_wrap{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.photoer_wrap .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.photoer_wrap .col{
+    width: 330px;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.photoer_pic{
+    width: 310px;
+    margin: 0 auto 20px;
+}
+.photoer_txt{
+    padding: 0 10px;
+}
+.photoer_txt .name{
+    border-bottom: 1px solid #AA563C;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.photoer_txt span{
+    font-size: 16px;
+    color: #ABABAB;
+    margin-right: 5px;
+}
+.photoer_txt h3{
+    display: inline-block;
+}
+.photoer_txt .good_style{
+    color: #808080;
+    margin-bottom: 5px;
+}
+.photoer_txt p{
+    margin-bottom: 20px;
+}
+.photoer_wrap .more a{
+    margin: auto;
+}
+.catdog_cat2{
+    background: url(../img/index/catdog_cat2.png) 0 0 no-repeat;
+    position: absolute;
+    background-size: contain;
+    width: 20%;
+    height: 80%;
+    top: -10%;
+    right: 0;
+    opacity: .5;
+    z-index: 2;
+}
+.back_gr_s{
+    position: absolute;
+    background: url(../img/index/back_gr_s.png) left 0 no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 80%;
+    top: 15%;
+    right: 0;
+    opacity: .7;
+    z-index: -3;
+}
+
+/* 價格方案 ============================================== */
+.plan_wrap{
+    position: relative;
+    background: url(../img/background/pink_ripple_w.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.plan_wrap .container{
+    position: relative;
+    z-index: 1;
+}
+.plan_wrap .container .h2_title{
+    margin-bottom: 100px;
+}
+.plan_wrap .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.plan_wrap .col{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.plan_clip{
+    position: absolute;
+    width: 25%;
+    top: -11%;
+    left: 10%;
+    margin: 0 auto;
+}
+.plan_content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ABABAB;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, .3);
+}
+.plan_pic{
+    width: 280px;
+    margin: 0 auto 20px;
+}
+.plan_content h3{
+    margin-bottom: 20px;
+    color: #AA563C;
+}
+.plan_txt{
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+    line-height: 26px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.plan_pric{
+    font-size: 20px;
+    color: #DF8A9B;
+    letter-spacing: 3px;
+    line-height: 30px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.plan_wrap .more a{
+    margin: auto;
+}
+.back_gr_b{
+    position: absolute;
+    background: url(../img/index/back_gr_b.png) right 0 no-repeat;
+    width: 60%;
+    height: 100%;
+    bottom: -20%;
+    opacity: .5;
+    z-index: 0;
+}
+/* .back_og_b{
+    position: absolute;
+    background: url(../img/index/back_og_b.png) 0 0 no-repeat;
+    width: 60%;
+    height: 140%;
+    top: -70px;
+    right: 0;
+    opacity: .7;
+    z-index: 0;
+} */
+
+/* 聯絡我們 ============================================== */
+.contact_wrap{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.contact_wrap .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact_wrap .col{
+    padding: 30px;
+}
+.contact_map{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+.contact_map iframe{
+    display: inline-block;
+}
+.contact_txt{
+    color: #606060;
+    letter-spacing: 3px;
+    line-height: 26px;
+    margin-bottom: 40px;
+}

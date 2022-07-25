@@ -1,0 +1,53 @@
+/* 內頁 上標題 圖片 ====================== */
+.inner_page{
+    background: url(../img/main/title_back/Photoer_style.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 主題風格 ============================================== */
+.style_wrap{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.style_wrap .container .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.style_wrap .container .row .col{
+    padding: 20px 40px;
+}
+.style_pic{
+    width: 260px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, .3);
+}
+.style_pic img{
+    transition: .5s 0s ease;
+}
+.style_pic img:hover{
+    transform: scale(1.2);
+}
+.style_txt{
+    vertical-align: middle;
+}
+.style_txt span{
+    display: inline-block;
+    font-size: 60px;
+    color: #803A29;
+    font-family: 'Caveat', cursive;
+    margin-right: 10px;
+}
+.style_txt h3{
+    display: inline-block;
+}
+.style_wrap a{
+    margin: auto;
+}

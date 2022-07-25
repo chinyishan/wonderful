@@ -1,0 +1,217 @@
+/* ALL seat ===================== */
+ol, ul {
+	list-style: none;
+}
+a{
+	display: block;
+	text-decoration: none;
+}
+img{
+	width: 100%;
+	display: block;
+}
+
+/* header 導覽列 ========================================= */
+.header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 2px 0px 10px 0px #606060;
+}
+.nav_content{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_logo{
+    width: 170px;
+}
+.header_logo a img{
+    width: 100%;
+}
+.nav_list{
+    display: flex;
+}
+.nav_list li a{
+    padding: 16px 20px;
+    color: #606060;
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 3px;
+}
+.nav_list li a:hover{
+    color: #fff;
+    background: #E78C7E;
+}
+
+/* 文字 ========================= */
+h2{
+    font-size: 36px;
+    letter-spacing: 6px;
+    padding: 0 10px 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+h3{
+    font-size: 24px;
+    color: #323232;
+    letter-spacing: 6px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+p{
+    font-size: 16px;
+    color: #606060;
+    line-height: 28px;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 200;
+}
+
+/* 標題共用 ========================== */
+.h2_title{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.h2_title h2{
+    margin: 0 auto 5px;
+    color: #55352D;
+}
+.h2_title .inner_eg{
+    color: #AA563C;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    letter-spacing: 6px;
+}
+
+/* 內頁白字上標題 ====================== */
+.inner_page{
+    width: 100%;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.inner_page h2{
+    color: white;
+    font-size: 60px;
+    letter-spacing: 10px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.inner_page .inner_eg{
+    font-size: 24px;
+    color: #ffff;
+    letter-spacing: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}
+
+/* 了解更多 連結 ========================= */
+.more{
+    text-align: center;
+}
+.more a{
+    font-size: 18px;
+    width: 180px;
+    padding: 15px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    background-color: #E68C82;
+    color: #fff;
+    border-radius: 30px;
+    transition: .5s 0s ease;
+}
+.more a:hover{
+    background-color: #fff;
+    color: #E68C82;
+    box-shadow: 0px 0px 10px 3px rgba(230, 140, 130, .8);
+    font-weight: 500;
+}
+
+/* 外層 ==================== */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* footer 資訊 ============================ */
+.footer{
+    background-color: #DF8A9B;
+    padding-top: 80px;
+}
+.footer .container{
+    color: white;
+    padding: 0 100px;
+}
+.footer .Studio{
+    padding-bottom: 50px;
+}
+.footer .row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer .news_title{
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 6px;
+    font-weight: 400;
+}
+.footer_logo{
+    padding: 60px 0;
+}
+.about_list a , .news_txt{
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.news_title{
+    padding-bottom: 15px;
+}
+.news_txt{
+    letter-spacing: 2px;
+    line-height: 26px;
+}
+.news_txt > div{
+    padding-bottom: 15px;
+}
+.community a{
+    width: 25px;
+    display: inline-block;
+}
+.footer_logo{
+    width: 240px;
+}
+.copy_right{
+    border-top: 1px solid rgba(255 ,255 ,255 ,.3);
+    padding-bottom: 20px;
+}
+.copy_txt{
+    font-size: 12px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.copy_right > .container{
+    padding-top: 10px;
+}
+.dog_paw_up{
+    position: fixed;
+    width: 5%;
+    z-index: 2;
+    bottom: 3%;
+    right: 1%;
+    transition: width .5s 0s ease;
+}
+.dog_paw_up:hover{
+    width: 6%;
+}

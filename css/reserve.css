@@ -1,0 +1,121 @@
+/* 內頁 上標題 圖片 ====================== */
+.inner_page{
+    background: url(../img/main/title_back/Photoer_reserve.jpg) 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 會員清單 ============================== */
+.member_wrap{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.member_data{
+    display: flex;
+    justify-content: center;
+}
+.member_data a{
+    font-size: 18px;
+    text-align: center;
+    width: 120px;
+    padding: 15px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #606060;
+    transition: .5s 0s ease;
+    margin: 0 10px;
+}
+.member_data a.active{
+    background-color: #E68C82;
+    color: #fff;
+}
+
+/* 預約步驟 ======================================== */
+.serve_wrap .row{
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serve_wrap .row .col{
+    text-align: center;
+    padding: 0 10px;
+    /* margin: auto; */
+}
+.serve_wrap .row li a{
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    padding: 20px;
+    background-color: #F1E9E6;
+    color: #606060;
+    vertical-align: middle;
+    margin: auto;
+}
+.serve_wrap .row .dog_paw_small{
+    display: inline-block;
+    width: 30px;
+    vertical-align: middle;
+}
+.serve_wrap .row .dog_paw_small img{
+    width: 100%;
+}
+.reservation_matters_wrap{
+    background-color: #F1E9E6;
+}
+.reservation_matters_wrap h3{
+    text-align: center;
+}
+
+/* 預約事項 ======================================== */
+.reservation_matters_wrap{
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+.reservation_matters_wrap h3{
+    font-size: 24px;
+    color: #323232;
+    letter-spacing: 6px;
+    font-family: 'Noto Sans TC', sans-serif;
+    padding-bottom: 40px;
+}
+.matters_txt{
+    width: 80%;
+    border: 1px solid #803A29;
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 20px;
+    margin: 0 auto 30px;
+}
+.agree_check{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.agree_check .agree_txt{
+    font-size: 16px;
+    color: #323232;
+    letter-spacing: 2px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+}
+.step_button{
+    text-align: center;
+}
+.step_button .next_step{
+    font-size: 16px;
+    width: 120px;
+    padding: 6px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    background-color: #E68C82;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+}
