@@ -2,7 +2,7 @@
 這是一個在前端職業訓練期間完成的第一個實作專案，主要目的是熟悉 HTML、CSS 排版技術與基礎 JavaScript 互動功能。專案內容以靜態網頁為主，透過手刻實作，建立對網頁結構、樣式控制與簡單動態行為的基本理解。
 
 ## Demo 連結
-<a href="https://chinyishan.github.io/wonderful/#">寵物攝影工作室wonderful</a>
+<a href="https://chinyishan.github.io/wonderful/#" target="_blank">寵物攝影工作室wonderful</a>
 
 ## 使用技術
 - HTML5：網頁結構設計
