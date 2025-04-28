@@ -18,105 +18,189 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:wght@200;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:wght@200;300&family=Noto+Sans+TC:wght@300;500&display=swap" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/just-validate@4.3.0/dist/just-validate.production.min.js"></script>
 </head>
 <body>
     <!-- header 導覽列 ========================================= -->
-    <header class="header">
-        <nav class="nav_content">
-            <div class="header_logo">
+    <input class="form_input" type="checkbox" id="nav_switch">
+    <header class="wrap_header">
+        <nav class="content_nav">
+            <div class="nav_logo">
                 <a href="./index.html">
-                    <img src="./img/main/logo/logo_LOGO.png" alt="wonderfullogo">
+                    <img src="./imges/main/wonderful_logo.png" alt="wonderful_logo">
                 </a>
             </div>
+            <label for="nav_switch" class="nav_hb">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul class="nav_list">
                 <li><a href="./service.html">拍攝服務</a></li>
                 <li><a href="./theme_style.html">主題風格</a></li>
-                <li><a href="./Photographer_work.html">攝影師作品</a></li>
+                <li><a href="./photographer_work.html">攝影師作品</a></li>
                 <li><a href="./price_plan.html">價格方案</a></li>
-                <li><a href="./studio_photography.html">線上預約</a></li>
+                <li class="nav_active"><a href="./reserve.html">線上預約</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- 內頁標題 ============================================= -->
     <div class="inner_page">
-        <h2>Online reservation</h2>
-        <div class="inner_eg">線上預約</div>
+        <h1>
+            <span>線上預約</span>
+            <span>Online reservation</span>
+        </h1>
     </div>
 
-    <!-- 會員清單 ============================================= -->
-    <section class="member_wrap">
-        <div class="container">
-            <ul class="member_data">
-                <li><a href="#" class="active">線上預約</a></li>
-                <li><a href="#">預約紀錄</a></li>
-                <li><a href="#">會員資料修改</a></li>
-                <li><a href="#">登出</a></li>
-            </ul>
-        </div>
-    </section>
-
     <!-- 預約步驟 =============================================== -->
-    <section class="serve_wrap">
+    <section class="wrap_reservation">
         <div class="container">
-            <div class="h2_title">
-                <h2>線上預約</h2>
-                <div class="inner_eg">- Online reservation -</div>
+            <h2 class="inner_title">
+                <span>填寫預約資料</span>
+                <small>/ Online reservation</small>
+            </h2>
+            <div class="step_content">
+                <ul class="step_ul">
+                    <li class="step_li active" id="stepLi1">
+                        <div class="step_ele">
+                            <div class="step_desc">
+                                <div class="num">
+                                    <p>1</p>
+                                </div>
+                                <div class="title">
+                                    <p>詳閱預約事項</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="step_li" id="stepLi2">
+                        <div class="step_ele">
+                            <div class="step_desc">
+                                <div class="num">
+                                    <p>2</p>
+                                </div>
+                                <div class="title">
+                                    <p>選擇預約內容</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="step_li" id="stepLi3">
+                        <div class="step_ele">
+                            <div class="step_desc">
+                                <div class="num">
+                                    <p>3</p>
+                                </div>
+                                <div class="title">
+                                    <p>填寫基本資料</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="step_li" id="stepLi4">
+                        <div class="step_ele">
+                            <div class="step_desc">
+                                <div class="num">
+                                    <p>4</p>
+                                </div>
+                                <div class="title">
+                                    <p>資料確認</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <ul class="row">
-                <li class="col">
-                    <a href="#">1.詳閱預約事項</a>
-                    <div class="dog_paw_small">
-                        <img src="./img/main/button/dog_paw_small.png" alt="dog_paw_small">
+            <form class="form_content row" id="bookingForm" autocomplete="off" novalidate="novalidate">
+                <div id="step1" class="form_step active">
+                    <h3>詳閱預約事項</h3>
+                    <ul class="form_ul">
+                        <li>1.預約拍攝都需要提前10個工作天。</li>
+                        <li>2.預約後還須協調攝影師和拍攝日期，需與您聯繫確認後才算預約完成。</li>
+                        <li>3.若有您想要的區域，在請與我們聯繫。</li>
+                        <li>4.一個方案限定一家人使用。</li>
+                        <li>5.恕不承接有攻擊性行為之動物。</li>
+                        <li>6.請確認好預約人數，當天拍攝禁止增加人員。</li>
+                        <li>7.若超過預約時段，述無法拍攝，需再在另預約時間。</li>
+                    </ul>
+                    <div class="form_btn">
+                        <button class="button" onclick="nextStep()">下一步</button>
                     </div>
-                </li>
-                <li class="col">
-                    <a href="#">2.選擇日期時段、<br>攝影師、方案</a>
-                    <div class="dog_paw_small">
-                        <img src="./img/main/button/dog_paw_small.png" alt="dog_paw_small">
+                </div>
+                <div id="step2" class="form_step">
+                    <h3>選擇預約內容</h3>
+                    <div class="form_item">
+                        <label class="form_label">選擇日期</label>
+                        <input class="form_input" type="date" id="date">
                     </div>
-                </li>
-                <li class="col">
-                    <a href="#">3.填寫基本資料</a>
-                    <div class="dog_paw_small">
-                        <img src="./img/main/button/dog_paw_small.png" alt="dog_paw_small">
+                    <div class="form_item">
+                        <label class="form_label">選擇時段</label>
+                        <select class="form_select" id="time">
+                            <option value="">請選擇</option>
+                            <option value="10:00">10:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="19:00">19:00</option>
+                        </select>
                     </div>
-                </li>
-                <li class="col">
-                    <a href="#">4.完成預約</a>
-                </li>
-            </ul>
+                    <div class="form_item">
+                        <label class="form_label">選擇攝影師</label>
+                        <select class="form_select" id="photographer">
+                            <option value="">請選擇</option>
+                            <option value="Alice">Alice</option>
+                            <option value="Joe">Joe</option>
+                            <option value="Sunny">Sunny</option>
+                            <option value="Ary">Ary</option>
+                        </select>
+                    </div>
+                    <div class="form_item">                        
+                        <label class="form_label">選擇方案</label>
+                        <select class="form_select" id="plan">
+                            <option value="">請選擇</option>
+                            <option value="寵物單獨方案">寵物單獨方案</option>
+                            <option value="寵物合拍方案">寵物合拍方案</option>
+                            <option value="寵物全家福方案">寵物全家福方案</option>
+                        </select>
+                    </div>
+                    <div class="form_btn">
+                        <button class="button" onclick="prevStep()">上一步</button>
+                        <button class="button" onclick="nextStep()">下一步</button>
+                    </div>
+                </div>
+                <div id="step3" class="form_step">
+                    <h3>填寫基本資料</h3>
+                    <div class="form_item">
+                        <label class="form_label">姓名</label>
+                        <input class="form_input" type="text" id="name" required placeholder="請輸入姓名">
+                    </div>
+                    <div class="form_item">
+                        <label class="form_label">電子郵件</label>
+                        <input class="form_input" type="email" id="email" required placeholder="請輸入電子郵件">
+                    </div>
+                    <div class="form_item">
+                        <label class="form_label">電話</label>
+                        <input class="form_input" type="tel" id="phone" required pattern="\\d{10}" placeholder="請輸入10位數電話">
+                    </div>
+                    <div class="form_btn">
+                        <button class="button" onclick="prevStep()">上一步</button>
+                        <button class="button" onclick="nextStep()">下一步</button>
+                    </div>
+                </div>
+                <div id="step4" class="form_step">
+                    <h3>資料確認</h3>
+                    <div id="summary"></div>
+                    <div class="form_btn">
+                        <button class="button" onclick="prevStep()">上一步</button>
+                        <button class="button" onclick="sendForm()">確認送出</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
 
-    <!-- 預約事項 ========================================  -->
-    <section class="reservation_matters_wrap">
-        <div class="container">
-            <h3>- 預約事項 -</h3>
-            <div class="matters_txt">
-                <p>
-                    1.預約拍攝都需要提前10個工作天。<br>
-                    2.預約後還須協調攝影師和拍攝日期，需與您聯繫確認後才算預約完成。<br>
-                    3.若有您想要的區域，在請與我們聯繫。<br>
-                    4.一個方案限定一家人使用。<br>
-                    5.恕不承接有攻擊性行為之動物。<br>
-                    6.請確認好預約人數，當天拍攝禁止增加人員。<br>
-                    7.若超過預約時段，述無法拍攝，需再在另預約時間。
-                </p>
-            </div>
-            <div class="agree_check">
-                <input class="agree_radio" type="radio">
-                <label class="agree_txt" for="agree">我已清楚並同意注意事項，並會轉告一同拍攝之成員</label>
-            </div>
-            <div class="step_button">
-                <!-- <input class="last_step" type="button" value="上一步"> -->
-                <input class="next_step" type="button" value="下一步">
-            </div>
-        </div>
-    </section>
-
-    <!-- footer ================================= -->
+    <!-- footer -->
     <footer class="wrap_footer">
         <div class="container footer_studio">
             <div class="row">
@@ -132,7 +216,7 @@
                     <ul class="studio_txt">
                         <li><a href="./service.html">拍攝服務</a></li>
                         <li><a href="./theme_style.html">主題風格</a></li>
-                        <li><a href="./Photographer_work.html">攝影師作品</a></li>
+                        <li><a href="./photographer_work.html">攝影師作品</a></li>
                         <li><a href="#">價格方案</a></li>
                         <li><a href="#">線上預約</a></li>
                     </ul>
@@ -185,5 +269,106 @@
         </div>
     </footer>
 
+    <script>
+        let currentStep = 1;
+        const bookingForm = document.getElementById('bookingForm');
+        const bookingFormValidator = new JustValidate('#bookingForm', {
+            errorFieldCssClass: 'is-invalid',
+        });
+
+        bookingFormValidator
+            .addField('#name', [
+                { rule: 'required', errorMessage: '姓名為必填' },
+            ])
+            .addField('#email', [
+                { rule: 'required', errorMessage: 'Email為必填' },
+                { rule: 'email', errorMessage: 'Email格式不正確' },
+            ])
+            .addField('#phone', [
+                { rule: 'required', errorMessage: '電話為必填' },
+                { rule: 'number', errorMessage: '電話格式錯誤' },
+                { rule: 'minLength', value: 10, errorMessage: '電話需為10位數' },
+                { rule: 'maxLength', value: 10, errorMessage: '電話需為10位數' },
+            ]);
+
+        /** 顯示步驟 */
+        function showStep(step) {
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById(`step${i}`).classList.remove('active');
+                document.getElementById(`stepLi${i}`).classList.remove('active');
+            }
+            document.getElementById(`step${step}`).classList.add('active');
+            document.getElementById(`stepLi${step}`).classList.add('active');
+            if (step === 4) fillSummary();
+        }
+
+        /** 下一步 */
+        function nextStep() {
+            if (currentStep === 2 && !validateStep2()) return;
+            if (currentStep === 3 && !validateStep3()) return;
+            if (currentStep < 4) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        }
+
+        /** 上一步 */
+        function prevStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                showStep(currentStep);
+            }
+        }
+
+        /** 驗證步驟2 */
+        function validateStep2() {
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const photographer = document.getElementById('photographer').value;
+            const plan = document.getElementById('plan').value;
+            if (!date || !time || !photographer || !plan) {
+                alert('請填寫完整正確資料')
+                return false;
+            }
+            return true;
+        }
+
+        /** 驗證步驟3 */
+        function validateStep3() {
+            const isValid = bookingFormValidator.isValid;
+            if (!isValid) {
+                alert('請填寫完整正確資料')
+            }
+            return isValid;
+        }
+
+        /** 確認資訊 */
+        function fillSummary() {
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const photographer = document.getElementById('photographer').value;
+            const plan = document.getElementById('plan').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            document.getElementById('summary').innerHTML = `
+                <p><strong>日期:</strong> ${date}</p>
+                <p><strong>時段:</strong> ${time}</p>
+                <p><strong>攝影師:</strong> ${photographer}</p>
+                <p><strong>方案:</strong> ${plan}</p>
+                <p><strong>姓名:</strong> ${name}</p>
+                <p><strong>電子郵件:</strong> ${email}</p>
+                <p><strong>電話:</strong> ${phone}</p>
+            `;
+        }
+
+
+        /** 送出表單 */
+        function sendForm() {
+            alert("已送出表單");
+            location.reload()
+        }
+    </script>
 </body>
 </html>
