@@ -2,11 +2,13 @@
 
 ## 專案簡介
 
-這是一個在前端職業訓練期間完成的第一個實作專案，主要目的是熟悉 HTML、CSS 排版技術與基礎 JavaScript 互動功能。專案內容以靜態網頁為主，透過手刻實作，建立對網頁結構、樣式控制與簡單動態行為的基本理解。
+本專案是【前端工程師職業訓練】期間完成的第一個實作個人專案，主要目的是熟悉 HTML、CSS 排版技術與基礎 JavaScript 互動功能。專案內容以靜態網頁為主，透過手刻實作，建立對網頁結構、樣式控制與簡單動態行為的基本理解。
 
 ## Demo 連結
 
-<a href="https://chinyishan.github.io/wonderful/#" target="_blank">寵物攝影工作室 wonderful</a>
+<a href="https://chinyishan.github.io/wonderful/#" target="_blank">網站連結</a>
+
+![wonderful_animation](https://github.com/user-attachments/assets/db75731a-ba5e-45a2-a64e-15effaa79605)
 
 ## 使用技術
 
